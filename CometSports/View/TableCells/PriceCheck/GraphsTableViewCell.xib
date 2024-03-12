@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="manrope-regular.otf">
+            <string>Manrope-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="441" id="KGk-i7-Jjw" customClass="GraphsTableViewCell" customModule="ScoreLineSports" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="441"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="441"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRt-nl-1Ei">
+                        <rect key="frame" x="16" y="11" width="288" height="419"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gBO-cV-XEz">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="419"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ydR-5G-c0o">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="209.66666666666666"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Frequency related to your search" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8j4-IE-3FW">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="38.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="Manrope-Regular" family="Manrope" pointSize="14"/>
+                                                <color key="textColor" red="0.85882353779999998" green="0.87058818339999999" blue="0.88627451660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qpv-Kk-JH0" customClass="BarChartView" customModule="DGCharts">
+                                                <rect key="frame" x="0.0" y="40.666666666666657" width="288" height="169"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="qpv-Kk-JH0" secondAttribute="bottom" id="5ae-05-gf8"/>
+                                            <constraint firstAttribute="trailing" secondItem="qpv-Kk-JH0" secondAttribute="trailing" id="I5G-pH-zGn"/>
+                                            <constraint firstAttribute="trailing" secondItem="8j4-IE-3FW" secondAttribute="trailing" id="bst-Zb-QiG"/>
+                                            <constraint firstItem="qpv-Kk-JH0" firstAttribute="leading" secondItem="ydR-5G-c0o" secondAttribute="leading" id="gKt-Ut-lmW"/>
+                                            <constraint firstItem="qpv-Kk-JH0" firstAttribute="top" secondItem="8j4-IE-3FW" secondAttribute="bottom" constant="2" id="hlp-99-xtb"/>
+                                            <constraint firstItem="8j4-IE-3FW" firstAttribute="leading" secondItem="ydR-5G-c0o" secondAttribute="leading" id="q5k-BE-jew"/>
+                                            <constraint firstItem="8j4-IE-3FW" firstAttribute="top" secondItem="ydR-5G-c0o" secondAttribute="top" id="vnd-gn-GRO"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4J1-tI-3iW">
+                                        <rect key="frame" x="0.0" y="209.66666666666663" width="288" height="209.33333333333337"/>
+                                        <subviews>
+                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uK5-Jc-J7R" customClass="LineChartView" customModule="DGCharts">
+                                                <rect key="frame" x="0.0" y="27.333333333333343" width="288" height="182"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pricing with respect to time" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pso-pc-YZy">
+                                                <rect key="frame" x="0.0" y="5" width="288" height="19.333333333333332"/>
+                                                <fontDescription key="fontDescription" name="Manrope-Regular" family="Manrope" pointSize="14"/>
+                                                <color key="textColor" red="0.85882353779999998" green="0.87058818339999999" blue="0.88627451660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Pso-pc-YZy" firstAttribute="leading" secondItem="4J1-tI-3iW" secondAttribute="leading" id="BbL-BB-ksK"/>
+                                            <constraint firstItem="uK5-Jc-J7R" firstAttribute="leading" secondItem="4J1-tI-3iW" secondAttribute="leading" id="Jwu-DI-NdL"/>
+                                            <constraint firstAttribute="trailing" secondItem="Pso-pc-YZy" secondAttribute="trailing" id="NyH-z0-5IL"/>
+                                            <constraint firstAttribute="bottom" secondItem="uK5-Jc-J7R" secondAttribute="bottom" id="bJD-fA-lQT"/>
+                                            <constraint firstItem="uK5-Jc-J7R" firstAttribute="top" secondItem="Pso-pc-YZy" secondAttribute="bottom" constant="3" id="qPT-zd-Df6"/>
+                                            <constraint firstAttribute="trailing" secondItem="uK5-Jc-J7R" secondAttribute="trailing" id="t3u-gF-zB6"/>
+                                            <constraint firstItem="Pso-pc-YZy" firstAttribute="top" secondItem="4J1-tI-3iW" secondAttribute="top" constant="5" id="wne-qc-KRb"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gBO-cV-XEz" firstAttribute="leading" secondItem="rRt-nl-1Ei" secondAttribute="leading" id="77B-N7-r42"/>
+                            <constraint firstAttribute="trailing" secondItem="gBO-cV-XEz" secondAttribute="trailing" id="9m0-a8-jqU"/>
+                            <constraint firstItem="gBO-cV-XEz" firstAttribute="top" secondItem="rRt-nl-1Ei" secondAttribute="top" id="EeX-jn-ZRB"/>
+                            <constraint firstAttribute="bottom" secondItem="gBO-cV-XEz" secondAttribute="bottom" id="Wm3-pp-jgK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="rRt-nl-1Ei" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="8pG-PJ-3tO"/>
+                    <constraint firstItem="rRt-nl-1Ei" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="eHs-F3-S3t"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rRt-nl-1Ei" secondAttribute="trailing" id="nQm-0o-LQt"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="rRt-nl-1Ei" secondAttribute="bottom" id="xwh-TY-8Jm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="barChart" destination="qpv-Kk-JH0" id="7aE-7M-DyS"/>
+                <outlet property="barChartTitleLBL" destination="8j4-IE-3FW" id="pSZ-2I-WkU"/>
+                <outlet property="lineChart" destination="uK5-Jc-J7R" id="7bj-4X-BNw"/>
+                <outlet property="lineChartTitleLBL" destination="Pso-pc-YZy" id="e19-e7-Hp6"/>
+            </connections>
+            <point key="canvasLocation" x="117.55725190839694" y="159.50704225352112"/>
+        </tableViewCell>
+    </objects>
+</document>

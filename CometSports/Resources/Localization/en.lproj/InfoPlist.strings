@@ -1,0 +1,13 @@
+/* 
+  InfoPlist.strings
+  Comet Sports
+
+  Created by iosDev on 24/07/2023.
+  
+*/
+
+"CFBundleDisplayName" = "Comet Sports";
+"CFBundleName"        = "Comet Sports";
+
+"NSCameraUsageDescription" = "Comet Sports would like to access your camera to upload profile picture and sports images";
+"NSPhotoLibraryUsageDescription" = "Comet Sports would like to access your photo library to upload profile picture and sports images";

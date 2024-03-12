@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="manrope-light.otf">
+            <string>Manrope-Light</string>
+        </array>
+        <array key="manrope-regular.otf">
+            <string>Manrope-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StatisticsTableCell" rowHeight="113" id="UKO-mh-bLK" customClass="StatisticsTableCell" customModule="ScoreLineSports" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="113"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UKO-mh-bLK" id="8Q6-s0-G0R">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="113"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZw-vT-J3V">
+                        <rect key="frame" x="0.0" y="18" width="80" height="0.0"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="GMf-hk-ZLf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Manrope-Regular" family="Manrope" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hyy-RH-ghe">
+                        <rect key="frame" x="304" y="18" width="80" height="0.0"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="LQY-Lm-gtI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Manrope-Regular" family="Manrope" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pn1-E3-oVG">
+                        <rect key="frame" x="82" y="18" width="224" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Manrope-Light" family="Manrope" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ybt-IL-JFf">
+                        <rect key="frame" x="0.0" y="102" width="384" height="6"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfk-Hi-L2V">
+                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="6"/>
+                                <color key="backgroundColor" name="yellow2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="93a-A0-vT0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7eT-Qm-r0r">
+                                <rect key="frame" x="8" y="0.0" width="376" height="6"/>
+                                <color key="backgroundColor" name="violet1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="6" id="zXb-f4-oUN"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Hyy-RH-ghe" firstAttribute="centerY" secondItem="mZw-vT-J3V" secondAttribute="centerY" id="099-17-Swo"/>
+                    <constraint firstItem="mZw-vT-J3V" firstAttribute="leading" secondItem="8Q6-s0-G0R" secondAttribute="leading" id="3wP-SO-D51"/>
+                    <constraint firstAttribute="trailing" secondItem="ybt-IL-JFf" secondAttribute="trailing" id="6Ak-gk-lNi"/>
+                    <constraint firstAttribute="trailing" secondItem="Hyy-RH-ghe" secondAttribute="trailing" id="GnC-di-da3"/>
+                    <constraint firstItem="Pn1-E3-oVG" firstAttribute="centerY" secondItem="mZw-vT-J3V" secondAttribute="centerY" id="J0g-lk-aqf"/>
+                    <constraint firstAttribute="bottom" secondItem="ybt-IL-JFf" secondAttribute="bottom" constant="5" id="N7v-dI-WvS"/>
+                    <constraint firstItem="mZw-vT-J3V" firstAttribute="top" secondItem="8Q6-s0-G0R" secondAttribute="top" constant="18" id="akz-8j-XPO"/>
+                    <constraint firstItem="Pn1-E3-oVG" firstAttribute="leading" secondItem="mZw-vT-J3V" secondAttribute="trailing" constant="2" id="bmE-iN-s8n"/>
+                    <constraint firstItem="Pn1-E3-oVG" firstAttribute="trailing" secondItem="Hyy-RH-ghe" secondAttribute="leading" constant="2" id="f1o-bY-dmV"/>
+                    <constraint firstItem="ybt-IL-JFf" firstAttribute="leading" secondItem="8Q6-s0-G0R" secondAttribute="leading" id="oUS-gd-aeD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="awayLBL" destination="Hyy-RH-ghe" id="FpU-N5-HyI"/>
+                <outlet property="homeLBL" destination="mZw-vT-J3V" id="ROy-wf-id4"/>
+                <outlet property="homeWidthConstraint" destination="93a-A0-vT0" id="H4g-ru-F3L"/>
+                <outlet property="stackView" destination="ybt-IL-JFf" id="wRa-0D-LvP"/>
+                <outlet property="titleLBL" destination="Pn1-E3-oVG" id="cnH-D1-Dfv"/>
+            </connections>
+            <point key="canvasLocation" x="-89" y="-101"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="violet1">
+            <color red="0.46200001239776611" green="0.25900000333786011" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="yellow2">
+            <color red="0.97299998998641968" green="0.99599999189376831" blue="0.063000001013278961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

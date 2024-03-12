@@ -1,0 +1,273 @@
+/* 
+  Localizable.strings
+ Comet Sports
+
+ Created by iosDev on 24/07/2023.
+  
+*/
+
+
+"Football"                                     = "足球";
+
+// Match
+
+"About"                                        = "关于";
+"Summary"                                      = "总结";
+"Standings"                                    = "积分榜";
+"Events"                                       = "活动";
+"Media"                                        = "媒体";
+"Statistics"                                   = "统计数据";
+"Lineup"                                       = "阵容";
+
+"Home"                                         = "主队";
+"Away"                                         = "客队";
+
+"Done"                                         = "完毕";
+"Next"                                         = "下一步";
+"OK"                                           = "好";
+"Save"                                         = "保存";
+"Continue"                                     = "继续";
+"Skip"                                         = "跳过";
+"Search"                                       = "搜索";
+"Cancel"                                       = "取消";
+"View All"                                     = "查看全部";
+"Today"                                        = "今天";
+"minute ago"                                   = "分钟前";
+"minutes ago"                                  = "分钟前";
+"hour ago"                                     = "一个小时前";
+"hours ago"                                    = "几小时前";
+"Now"                                          = "现在";
+"Yesterday"                                    = "昨天";
+"Show More"                                    = "显示更多";
+"Show Less"                                    = "显示少";
+"Choose date to show matches"                  = "选择显示比赛的日期";
+"Related Products"                             = "相关产品";
+"Product Detail"                               = "产品详情";
+"Matches"                                      = "比赛";
+"Match List"                                   = "比赛列表";
+"Analyst with high winrate"                    = "高胜率分析员";
+"Analysts & Prediction"                        = "分析与预测";
+"Analyst Recomendation"                        = "分析师推荐";
+"Forums"                                       = "论坛";
+"vs"                                           = "对阵";
+"of"                                           = "之";
+"Match Status"                                 = "比赛现状";
+"Main Player"                                  = "主力队员";
+"Substitutes"                                  = "替补队员";
+
+"Schedule"                                     = "进度";
+"Finished"                                     = "已完成";
+"Not started"                                  = "未开始";
+"Result only"                                  = "仅有结果";
+"Postponed"                                    = "推迟";
+
+"Recommended"                                  = "推荐";
+"Pending"                                      = "待定";
+"Lose"                                         = "输";
+"win"                                          = "胜";
+"Win"                                          = "胜";
+"Draw"                                         = "平局";
+"Withdraw"                                     = "退出";
+"Goal"                                         = "进球";
+"Goals"                                        = "进球";
+"Substitution"                                 = "替补出场";
+"Yellow Card"                                  = "黄牌";
+" scored a goal"                               = " 进球";
+" got a yellow card."                          = " 吃到一张黄牌。";
+" got a red card."                             = " 吃到红牌。";
+"Referee announces"                            = "裁判宣布足球比赛补时";
+"minutes of added time in the football match." = "分钟。";
+" is substituted on and"                       = " 被替换上场，";
+"is substituted off."                          = "被替换下场。";
+
+
+// Onboarding & Login
+"Hot Matches"                                  = "热门比赛";
+"All of your favorite matches in one place"    = "您所有喜爱的比赛都在一个地方";
+"Price Checker"                                = "价格检查器";
+"Using our AI algorithm find the latest prices for all of your favorite sports products" = "使用我们的人工智能算法找到您所有喜爱的体育产品的最新价格";
+"Latest Predictions"                           = "最新预测";
+"Read the latest predictions and analyses from our experts" = "阅读我们专家的最新预测和分析";
+"Enter your Full Name"                         = "输入您的全名";
+"Enter your Email"                             = "请输入您的电子邮件";
+"Enter a valid Emai"                           = "请输入有效的电子邮件";
+"Enter Name"                                   = "请输入姓名";
+"Enter Password"                               = "请输入密码";
+"Password must be 6 characters or greater"     = "密码必须至少6个字符";
+"Please agree to the terms and conditions."    = "请同意条款和条件。";
+"Account created now you can log in using your credentials." = "帐号已创建，您现在可以使用您的凭据登录。";
+"Please upload a profile image to continue."   = "请上传个人资料图片以继续。";
+"Type something"                               = "输入一些东西";
+"Profile updated."                             = "个人资料已更新";
+"Are you sure you want to delete?"             = "你确定要删除吗？";
+"Please, Login or Sign Up to your account"     = "请登录或注册您的帐户";
+"Glad to meet you again!"                      = "很高兴再次见到你！";
+"Sign Up"                                      = "注册";
+"Don’t have an account?"                       = "没有账户？";
+"Login"                                        = "登录";
+"Sign In"                                      = "登录";
+"Password"                                     = "密码";
+"Email"                                        = "电子邮件";
+"Full name"                                    = "全名";
+"By signing up you agree to our Terms of use and Privacy Policy" = "注册即表示您同意我们的使用条款和隐私政策";
+"Terms of use"                                 = "使用条款";
+"Privacy Policy"                               = "隐私政策";
+"Already have an account?"                     = "已经有账户？";
+
+//Home
+"Login / Sign Up"                              = "登录 / 注册";
+"Guest User"                                   = "客人用户";
+"Hi,"                                          = "你好，";
+"Top News"                                     = "热门新闻";
+"FanZones"                                     = "粉丝专区";
+"Feed"                                         = "动态";
+"Predictions"                                  = "预测";
+"See all"                                      = "查看全部";
+"Match Score"                                  = "比赛得分";
+"Join"                                         = "加入";
+"Join Fanzone"                                 = "加入粉丝专区";
+"Zones"                                        = "专区";
+"Explore"                                      = "探索";
+"My Zones"                                     = "我的专区";
+"Unknown"                                      = "未知";
+"Type a message"                               = "输入消息";
+"Comments"                                     = "评论";
+"Posts"                                        = "帖子";
+"Post"                                         = "帖子";
+"Publish"                                      = "发布";
+"Description"                                  = "描述";
+"Post Title"                                   = "帖子标题";
+"Select a Fan Zone"                            = "选择一个粉丝专区";
+"New Post"                                     = "新帖子";
+"Enter title"                                  = "输入标题";
+"Enter description"                            = "输入描述";
+"Choose fanzone"                               = "选择粉丝区";
+"Post added."                                  = "帖子已添加。";
+"Post updated."                                = "帖子已更新。";
+"Win Rate"                                     = "赢率";
+"Win Streak"                                   = "连胜";
+"handicap"                                     = "让分";
+"Handicap"                                     = "让分";
+"Under"                                        = "在下面";
+"Over"                                         = "超过";
+"Overunder"                                    = "大小";
+"Overview"                                     = "概览";
+"Match info"                                   = "比赛信息";
+"Odds"                                         = "赔率";
+"H2H"                                          = "面对面";
+"Not started"                                  = "未开始";
+"First half"                                   = "上半场";
+"Half-time"                                    = "半场休息";
+"Second half"                                  = "下半场";
+"Overtime"                                     = "加时";
+"Overtime(depreated)"                          = "加时(已废弃)";
+"Penalty Shoot-ot"                             = "点球大战";
+"End"                                          = "结束";
+"Delay"                                        = "延迟";
+"Interrupt"                                    = "中断";
+"Cut in half"                                  = "中场休息";
+"Canceled"                                     = "取消";
+"To be determined"                             = "待定";
+"Ranking"                                      = "排名";
+"Asia"                                         = "亚洲";
+"Euro"                                         = "欧洲";
+"BigSmall"                                     = "大小";
+"Handicap"                                     = "让球盘";
+"Yellow Cards"                                 = "黄卡";
+"Yellow Card"                                  = "黄卡";
+"Red Cards"                                    = "红牌";
+"Red Card"                                     = "红牌";
+"Half Time Score"                              = "半场得分";
+"Corner Score"                                 = "角球得分";
+"Overtime Score"                               = "加时赛得分";
+"Penalty Score"                                = "点球得分";
+"Mlive"                                        = "直播";
+"Stage Id"                                     = "舞台编号";
+"Group Num"                                    = "组数";
+"Round Num"                                    = "场数";
+"Weather"                                      = "天气";
+"Wind"                                         = "风";
+"Humidity"                                     = "湿度";
+"Temperature"                                  = "温度";
+"Pressure"                                     = "压力";
+"Home Position"                                = "首页位置";
+"Away Position"                                = "客场位置";
+
+"Edit Post"                                    = "编辑帖子";
+"Delete Post"                                  = "删除帖子";
+"Report"                                       = "举报";
+"Block User"                                   = "阻止用户";
+"Unblock"                                      = "解锁";
+"Blocked Users"                                = "被阻止的用户";
+"No Blocked Users yet!"                        = "尚未封禁用户！";
+"Are you sure you want to unblock this user?"  = "您确定要解除用户锁定吗？";
+"Report Post"                                  = "报告发布";
+"What is the reason for reporting this post?"  = "举报这个帖子的原因是什么？";
+"Enter report content details"                 = "输入报告内容详细信息";
+"You are about to block this user. You will no longer see their content and the user will no longer be able to see your content. Would you like to block this user?" = "您即将阻止该用户。您将无法再看到他们的内容，该用户也将无法再看到您的内容。您确定阻止该用户吗？";
+"You are about to report this post as malicious or abusive. Would you like to report this post to PitchStories?" = "您要将此帖举报为恶意或辱骂。您是否要向投球故事报告此帖？";
+"Thank you for reporting this post. Your report has been successfully received, and we will take the necessary actions after a thorough investigation." = "谢谢您举报这个帖子！ 您的举报已成功受理，我们将在彻底调查后采取必要的行动.";
+
+//Analyst
+
+"Winrate "                                     = "胜率 ";
+" followers"                                   = " 追随者";
+" Top Win In Games"                            = " 最高胜场";
+" Analysis"                                    = " 分析";
+" Posts"                                       = " 发布";
+
+//Product
+
+"You searched for "                            = "您搜索的是 ";
+"Searching For Your Items"                     = "搜索商品";
+"Price Check"                                  = "价格查询";
+"Search for products here"                     = "在此搜索产品";
+"How It Works"                                 = "如何运作";
+"How To Use"                                   = "如何使用";
+"No chart data available."                     = "无图表数据。";
+"Pricing with respect to time"                 = "与时间相关的定价";
+"Category Frequency related to your search"    = "与您的搜索相关的类别频率";
+"Loading More Data"                            = "加载更多数据";
+"Loading..."                                   = "正在加载...";
+"Average Product Price:"                       = "平均产品价格：";
+"Cheapest Product Price:"                      = "最便宜的产品价格：";
+"Most Expensive Product Price:"                = "最贵产品价格：";
+"See Product"                                  = "查看产品";
+"See All Product"                              = "查看所有产品";
+"Price"                                        = "价格";
+
+"1: We take the keyword you entered\n2: Keyword is handed to an ML Model\n3: Model analyzes the database for all related products\n4: API returns results with all the comparative results\n5: Deep analysis on the products is performed\n6: We display results with interactive UIs"  = "1: 我们获取您输入的关键词\n2: 将关键词交给 ML 模型 \n3: 模型分析数据库中所有相关产品\n4: API 返回包含所有比较结果的结果\n5: 对产品进行深入分析\n6: 我们通过交互式用户界面显示结果。";
+
+"1: Enter the desired product in search box\n2: Wait for the system to return results\n3: Browse the results and make wise choices\n4: For example: Nike, Adidas, etc." = "1: 在搜索框中输入所需产品\n2: 等待系统返回结果\n3: 浏览结果并做出明智选择\n4: 例如：耐克、阿迪达斯等";
+
+//Settings
+
+"Account"                                      = "账户";
+"Edit Profile"                                 = "编辑个人资料";
+"Language"                                     = "语言";
+"Privacy Policy"                               = "隐私政策";
+"Rate this app"                                = "评分应用程序";
+"Contact Us"                                   = "联系我们";
+"Are you sure you want to logout?"             = "您确定要退出吗？";
+"Delete Account"                               = "删除帐户";
+
+//Language
+
+"English"                                      = "英文";
+
+// Error messages
+"No Data Found"                                = "未找到数据";
+"No Matches Found"                             = "未找到比赛";
+"No Players Found"                             = "未找到球员";
+"No Leagues Found"                             = "未找到联盟";
+"No Medias Found"                              = "未找到媒体";
+"No Videos Found"                              = "未找到视频";
+"No players found"                             = "未找到球员";
+"No Analyts Found"                             = "未找到分析物";
+"No Products Found"                            = "未找到产品";
+"No Comments yet!"                             = "还没有评论！";
+"No Posts yet!"                                = "还没有帖子！";
+
+"It looks like there aren't many great matches for your search" = "看起来没有很多与你的搜索相匹配的内容";
+"Poor connection. Please try again!"           = "连接不良。请再试一次!";
+"Oops! Something went wrong. Please try again."= "糟糕! 出了点差错。请再试一次。";

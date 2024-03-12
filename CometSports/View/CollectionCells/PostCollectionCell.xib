@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="manrope-medium.otf">
+            <string>Manrope-Medium</string>
+        </array>
+        <array key="manrope-regular.otf">
+            <string>Manrope-Regular</string>
+        </array>
+        <array key="manrope-semibold.otf">
+            <string>Manrope-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PostCollectionCell" customModule="ScoreLineSports" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="337" height="375"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="337" height="375"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CaK-kI-4OM">
+                        <rect key="frame" x="2" y="2" width="333" height="371"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pCW-8O-bR0">
+                                <rect key="frame" x="10" y="10" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pCW-8O-bR0" secondAttribute="height" multiplier="1:1" id="Fd9-pM-XPj"/>
+                                    <constraint firstAttribute="height" constant="40" id="Fxm-3z-P1g"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8c6-Jr-1Ug">
+                                <rect key="frame" x="55" y="10" width="238" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Manrope-Medium" family="Manrope" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jW5-Km-DTI">
+                                <rect key="frame" x="55" y="13" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Manrope-Regular" family="Manrope" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdR-2m-qJ6">
+                                <rect key="frame" x="293" y="35" width="30" height="34"/>
+                                <fontDescription key="fontDescription" name="Manrope-Semibold" family="Manrope" pointSize="12"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="OAE-2F-aKw">
+                                <rect key="frame" x="12" y="75" width="309" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="gL8-FZ-2BX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="253" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwK-Nz-wOP">
+                                <rect key="frame" x="12" y="185" width="309" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Manrope-Regular" family="Manrope" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbU-7J-QhT">
+                                <rect key="frame" x="293" y="35" width="30" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajJ-ju-GVP">
+                                <rect key="frame" x="288" y="0.0" width="45" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="bAw-lc-RCn"/>
+                                    <constraint firstAttribute="height" constant="35" id="dkb-1J-mGY"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="ellipsis" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="253" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8g4-bw-CKY">
+                                <rect key="frame" x="10" y="65" width="313" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Manrope-Medium" family="Manrope" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="gray2"/>
+                        <constraints>
+                            <constraint firstItem="dbU-7J-QhT" firstAttribute="bottom" secondItem="CdR-2m-qJ6" secondAttribute="bottom" id="2hb-uB-ESl"/>
+                            <constraint firstItem="dbU-7J-QhT" firstAttribute="leading" secondItem="CdR-2m-qJ6" secondAttribute="leading" id="4dR-FL-Ejn"/>
+                            <constraint firstAttribute="trailing" secondItem="OAE-2F-aKw" secondAttribute="trailing" constant="12" id="4uw-ad-t0l"/>
+                            <constraint firstItem="8g4-bw-CKY" firstAttribute="leading" secondItem="CaK-kI-4OM" secondAttribute="leading" constant="10" id="56s-Yr-QnC"/>
+                            <constraint firstItem="pCW-8O-bR0" firstAttribute="top" secondItem="CaK-kI-4OM" secondAttribute="top" constant="10" id="9Cj-Vd-SSa"/>
+                            <constraint firstAttribute="trailing" secondItem="CdR-2m-qJ6" secondAttribute="trailing" constant="10" id="CsU-Xf-ijy"/>
+                            <constraint firstItem="dbU-7J-QhT" firstAttribute="top" secondItem="CdR-2m-qJ6" secondAttribute="top" id="Enk-58-Iz8"/>
+                            <constraint firstItem="8c6-Jr-1Ug" firstAttribute="leading" secondItem="pCW-8O-bR0" secondAttribute="trailing" constant="5" id="IKO-5V-UmL"/>
+                            <constraint firstItem="pCW-8O-bR0" firstAttribute="leading" secondItem="CaK-kI-4OM" secondAttribute="leading" constant="10" id="LTb-wH-yZW"/>
+                            <constraint firstAttribute="trailing" secondItem="SwK-Nz-wOP" secondAttribute="trailing" constant="12" id="Ln7-MC-m6R"/>
+                            <constraint firstAttribute="trailing" secondItem="8g4-bw-CKY" secondAttribute="trailing" constant="10" id="MM6-Cd-2In"/>
+                            <constraint firstAttribute="trailing" secondItem="ajJ-ju-GVP" secondAttribute="trailing" id="SRC-1m-WQq"/>
+                            <constraint firstItem="jW5-Km-DTI" firstAttribute="top" secondItem="8c6-Jr-1Ug" secondAttribute="bottom" constant="3" id="URV-zN-mqR"/>
+                            <constraint firstItem="8c6-Jr-1Ug" firstAttribute="top" secondItem="pCW-8O-bR0" secondAttribute="top" id="WqJ-Sf-eZQ"/>
+                            <constraint firstItem="jW5-Km-DTI" firstAttribute="leading" secondItem="8c6-Jr-1Ug" secondAttribute="leading" id="XrZ-lH-wVT"/>
+                            <constraint firstItem="OAE-2F-aKw" firstAttribute="top" secondItem="8g4-bw-CKY" secondAttribute="bottom" constant="10" id="Yd7-o3-fE1"/>
+                            <constraint firstItem="8g4-bw-CKY" firstAttribute="top" secondItem="pCW-8O-bR0" secondAttribute="bottom" constant="15" id="Zhu-nD-0Xf"/>
+                            <constraint firstItem="SwK-Nz-wOP" firstAttribute="top" secondItem="OAE-2F-aKw" secondAttribute="bottom" constant="10" id="cwf-31-Os0"/>
+                            <constraint firstAttribute="trailing" secondItem="8c6-Jr-1Ug" secondAttribute="trailing" constant="40" id="dfJ-Kc-qce"/>
+                            <constraint firstItem="CdR-2m-qJ6" firstAttribute="top" secondItem="CaK-kI-4OM" secondAttribute="top" constant="35" id="fq2-YU-HfP"/>
+                            <constraint firstItem="dbU-7J-QhT" firstAttribute="trailing" secondItem="CdR-2m-qJ6" secondAttribute="trailing" id="m0s-T0-Cgs"/>
+                            <constraint firstItem="ajJ-ju-GVP" firstAttribute="top" secondItem="CaK-kI-4OM" secondAttribute="top" id="xus-Kk-xEb"/>
+                            <constraint firstItem="OAE-2F-aKw" firstAttribute="leading" secondItem="CaK-kI-4OM" secondAttribute="leading" constant="12" id="yUI-ec-sTV"/>
+                            <constraint firstItem="SwK-Nz-wOP" firstAttribute="leading" secondItem="CaK-kI-4OM" secondAttribute="leading" constant="12" id="yvO-U2-k49"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="13"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="CaK-kI-4OM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="BI3-Hs-hYY"/>
+                <constraint firstItem="CaK-kI-4OM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="EVY-2u-MLw"/>
+                <constraint firstAttribute="trailing" secondItem="CaK-kI-4OM" secondAttribute="trailing" constant="2" id="IEY-M8-72s"/>
+                <constraint firstAttribute="bottom" secondItem="CaK-kI-4OM" secondAttribute="bottom" constant="2" id="xyX-d0-UIl"/>
+            </constraints>
+            <size key="customSize" width="337" height="375"/>
+            <connections>
+                <outlet property="dateLBL" destination="jW5-Km-DTI" id="YVK-0h-ggo"/>
+                <outlet property="detailLBL" destination="SwK-Nz-wOP" id="qgm-Yd-JRH"/>
+                <outlet property="forumBTN" destination="dbU-7J-QhT" id="tIS-sb-BqR"/>
+                <outlet property="forumNameLBL" destination="CdR-2m-qJ6" id="MNX-cS-ynh"/>
+                <outlet property="imageCVHeightConstraint" destination="gL8-FZ-2BX" id="XjN-L2-Se1"/>
+                <outlet property="imageIV" destination="OAE-2F-aKw" id="qgV-od-IyW"/>
+                <outlet property="moreBTN" destination="ajJ-ju-GVP" id="0DV-Vc-38s"/>
+                <outlet property="nameTopConstraint" destination="WqJ-Sf-eZQ" id="PG4-J8-EKS"/>
+                <outlet property="titleLBL" destination="8g4-bw-CKY" id="fC4-qS-MHC"/>
+                <outlet property="userImageIV" destination="pCW-8O-bR0" id="939-Et-NA5"/>
+                <outlet property="userNameLBL" destination="8c6-Jr-1Ug" id="sa8-LF-fXz"/>
+            </connections>
+            <point key="canvasLocation" x="162.59541984732823" y="134.85915492957747"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
+        <namedColor name="gray2">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

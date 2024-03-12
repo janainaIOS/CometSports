@@ -1,0 +1,279 @@
+/* 
+  Localizable.strings
+ Comet Sports
+
+ Created by iosDev on 24/07/2023.
+  
+*/
+
+"Football"                                     = "Football";
+
+// Match
+
+"About"                                        = "About";
+"Summary"                                      = "Summary";
+"Standings"                                    = "Standings";
+"Events"                                       = "Events";
+"Media"                                        = "Media";
+"Statistics"                                   = "Statistics";
+"Lineup"                                       = "Lineup";
+
+"Home"                                         = "Home";
+"Away"                                         = "Away";
+
+"Done"                                         = "Done";
+"Next"                                         = "Next";
+"OK"                                           = "OK";
+"Save"                                         = "Save";
+"Continue"                                     = "Continue";
+"Skip"                                         = "Skip";
+"Search"                                       = "Search";
+"Cancel"                                       = "Cancel";
+"View All"                                     = "View All";
+"Today"                                        = "Today";
+"minute ago"                                   = "minute ago";
+"minutes ago"                                  = "minutes ago";
+"hour ago"                                     = "hour ago";
+"hours ago"                                    = "hours ago";
+"Now"                                          = "Now";
+"Yesterday"                                    = "Yesterday";
+"Show More"                                    = "Show More";
+"Show Less"                                    = "Show Less";
+"Choose date to show matches"                  = "Choose date to show matches";
+"Related Products"                             = "Related Products";
+"Product Detail"                               = "Product Detail";
+"Matches"                                      = "Matches";
+"Match List"                                   = "Match List";
+"Analyst with high winrate"                    = "Analyst with high winrate";
+"Analysts & Prediction"                        = "Analysts & Prediction";
+"Analyst Recomendation"                        = "Analyst Recomendation";
+"Forums"                                       = "Forums";
+"vs"                                           = "vs";
+"of"                                           = "of";
+"Match Status"                                 = "Match Status";
+"Main Player"                                  = "Main Player";
+"Substitutes"                                  = "Substitutes";
+
+"Schedule"                                     = "Schedule";
+"Not started"                                  = "Not started";
+"Finished"                                     = "Finished";
+"Result only"                                  = "Result only";
+"Postponed"                                    = "Postponed";
+
+"Recommended"                                  = "Recommended";
+"Pending"                                      = "Pending";
+"Lose"                                         = "Lose";
+"win"                                          = "win";
+"Win"                                          = "Win";
+"Draw"                                         = "Draw";
+"Withdraw"                                     = "Withdraw";
+"Goal"                                         = "Goal";
+"Goals"                                        = "Goals";
+"Substitution"                                 = "Substitution";
+" scored a goal"                               = " scored a goal";
+" got a yellow card."                          = " got a yellow card.";
+" got a red card."                             = " got a red card.";
+"Referee announces"                            = "Referee announces";
+"minutes of added time in the football match." = "minutes of added time in the football match.";
+" is substituted on and"                       = " is substituted on and";
+"is substituted off."                          = "is substituted off.";
+
+
+// Onboarding & Login
+"Hot Matches"                                  = "Hot Matches";
+"All of your favorite matches in one place"    = "All of your favorite matches in one place";
+"Price Checker"                                = "Price Checker";
+"Using our AI algorithm find the latest prices for all of your favorite sports products" = "Using our AI algorithm find the latest prices for all of your favorite sports products";
+"Latest Predictions"                           = "Latest Predictions";
+"Read the latest predictions and analyses from our experts" = "Read the latest predictions and analyses from our experts";
+"Enter your Full Name"                         = "Enter your Full Nam";
+"Enter your Email"                             = "Enter your Email";
+"Enter a valid Email"                          = "Enter a valid Email";
+"Enter Name"                                   = "Enter Name";
+"Enter Password"                               = "Enter Password";
+"Password must be 6 characters or greater"     = "Password must be 6 characters or greate";
+"Please agree to the terms and conditions."    = "Please agree to the terms and conditions.";
+"Account created now you can log in using your credentials." = "Account created now you can log in using your credentials.";
+"Please upload a profile image to continue."   = "Please upload a profile image to continue.";
+"Type something"                               = "Type something";
+"Profile updated."                             = "Profile updated.";
+"Are you sure you want to delete?"             = "Are you sure you want to delete?";
+"Please, Login or Sign Up to your account"     = "Please, Login or Sign Up to your account";
+"Glad to meet you again!"                      = "Glad to meet you again!";
+"Sign Up"                                      = "Sign Up";
+"Don’t have an account?"                       = "Don’t have an account?";
+"Forgot Password"                              = "Forgot Password";
+"Login"                                        = "Login";
+"Sign Up"                                      = "Sign Up";
+"Password"                                     = "Password";
+"Email"                                        = "Email";
+"Full name"                                    = "Full name";
+"By signing up you agree to our Terms of use and Privacy Policy" = "By signing up you agree to our Terms of use and Privacy Policy";
+"Terms of use"                                 = "Terms of use";
+"Privacy Policy"                               = "Privacy Policy";
+"Sign In"                                      = "Sign In";
+"Already have an account?"                     = "Already have an account?";
+
+//Home
+"Login / Sign Up"                              = "Login / Sign Up";
+"Guest User"                                   = "Guest User";
+"Hi,"                                          = "Hi,";
+"Hot Matches"                                  = "Hot Matches";
+"Top News"                                     = "Top News";
+"FanZones"                                     = "FanZones";
+"Feed"                                         = "Feed";
+"Predictions"                                  = "Predictions";
+"See all"                                      = "See all";
+"Match Score"                                  = "Match Score";
+"Join"                                         = "Join";
+"Join Fanzone"                                 = "Join Fanzone";
+"Posts"                                        = "Posts";
+"Post"                                         = "Post";
+"Zones"                                        = "Zones";
+"Explore"                                      = "Explore";
+"My Zones"                                     = "My Zones";
+"Unknown"                                      = "Unknown";
+"Type a message"                               = "Type a message";
+"Comments"                                     = "Comments";
+"Publish"                                      = "Publish";
+"Description"                                  = "Description";
+"Post Title"                                   = "Post Title";
+"Select a Fan Zone"                            = "Select a Fan Zone";
+"New Post"                                     = "New Post";
+"Enter title"                                  = "Enter title";
+"Enter description"                            = "Enter description";
+"Choose fanzone"                               = "Choose fanzone";
+"Post added."                                  = "Post added.";
+"Post updated."                                = "Post updated.";
+"Win Rate"                                     = "Win Rate";
+"Win Streak"                                   = "Win Streak";
+"handicap"                                     = "handicap";
+"Handicap"                                     = "Handicap";
+"Under"                                        = "Under";
+"Over"                                         = "Over";
+"Overunder"                                    = "Overunder";
+"Overview"                                     = "Overview";
+"Match info"                                   = "Match info";
+"Odds"                                         = "Odds";
+"H2H"                                          = "H2H";
+"Not started"                                  = "Not started";
+"First half"                                   = "First half";
+"Half-time"                                    = "Half-time";
+"Second half"                                  = "Second half";
+"Overtime"                                     = "Overtime";
+"Overtime(deprecated)"                         = "Overtime(deprecated)";
+"Penalty Shoot-out"                            = "Penalty Shoot-out";
+"End"                                          = "End";
+"Delay"                                        = "Delay";
+"Interrupt"                                    = "Interrupt";
+"Cut in half"                                  = "Cut in half";
+"Canceled"                                     = "Canceled";
+"To be determined"                             = "To be determined";
+"Ranking"                                      = "Ranking";
+"Asia"                                         = "Asia";
+"Euro"                                         = "Euro";
+"BigSmall"                                     = "BigSmall";
+"Handicap"                                     = "Handicap";
+"Yellow Cards"                                 = "Yellow Cards";
+"Yellow Card"                                  = "Yellow Card";
+"Red Cards"                                    = "Red Cards";
+"Red Card"                                     = "Red Card";
+"Half Time Score"                              = "Half Time Score";
+"Corner Score"                                 = "Corner Score";
+"Overtime Score"                               = "Overtime Score";
+"Penalty Score"                                = "Penalty Score";
+"Mlive"                                        = "Mlive";
+"Stage Id"                                     = "Stage Id";
+"Group Num"                                    = "Group Num";
+"Round Num"                                    = "Round Num";
+"Weather"                                      = "Weather";
+"Wind"                                         = "Wind";
+"Humidity"                                     = "Humidity";
+"Temperature"                                  = "Temperature";
+"Pressure"                                     = "Pressure";
+"Home Position"                                = "Home Position";
+"Away Position"                                = "Away Position";
+
+"Edit Post"                                    = "Edit Post";
+"Delete Post"                                  = "Delete Post";
+"Report"                                       = "Report";
+"Block User"                                   = "Block User";
+"Unblock"                                      = "Unblock";
+"Blocked Users"                                = "Blocked Users";
+"No Blocked Users yet!"                        = "No Blocked Users yet!";
+"Are you sure you want to unblock this user?"  = "Are you sure you want to unblock this user?";
+"Report Post"                                  = "Report Post";
+"What is the reason for reporting this post?"  = "What is the reason for reporting this post?";
+"Enter report content details"                 = "Enter report content details";
+"You are about to block this user. You will no longer see their content and the user will no longer be able to see your content. Would you like to block this user?" = "You are about to block this user. You will no longer see their content and the user will no longer be able to see your content. Would you like to block this user?";
+"You are about to report this post as malicious or abusive. Would you like to report this post to PitchStories?" = "You are about to report this post as malicious or abusive. Would you like to report this post to PitchStories?";
+"Thank you for reporting this post. Your report has been successfully received, and we will take the necessary actions after a thorough investigation." = "Thank you for reporting this post. Your report has been successfully received, and we will take the necessary actions after a thorough investigation.";
+
+//Analyst
+
+"Winrate "                                     = "Winrate ";
+" followers"                                   = " followers";
+" Top Win In Games"                            = " Top Win In Games";
+" Analysis"                                    = " Analysis";
+" Posts"                                       = " Posts";
+
+
+//Product
+
+"You searched for "                            = "You searched for ";
+"Searching For Your Items"                     = "Searching For Your Items";
+"Price Check"                                  = "Price Check";
+"Search for products here"                     = "Search for products here";
+"How It Works"                                 = "How It Works";
+"How To Use"                                   = "How To Use";
+"No chart data available."                     = "No chart data available.";
+"Pricing with respect to time"                 = "Pricing with respect to time";
+"Category Frequency related to your search"    = "Category Frequency related to your search";
+"Loading More Data"                            = "Loading More Data";
+"Loading..."                                   = "Loading...";
+"Average Product Price:"                       = "Average Product Price";
+"Cheapest Product Price:"                      = "Cheapest Product Price:";
+"Most Expensive Product Price:"                = "Most Expensive Product Price:";
+"See Product"                                  = "See Product";
+"See All Product"                              = "See All Product";
+"Price"                                        = "Price";
+
+"1: We take the keyword you entered\n2: Keyword is handed to an ML Model\n3: Model analyzes the database for all related products\n4: API returns results with all the comparative results\n5: Deep analysis on the products is performed\n6: We display results with interactive UIs" = "1: We take the keyword you entered\n2: Keyword is handed to an ML Model\n3: Model analyzes the database for all related products\n4: API returns results with all the comparative results\n5: Deep analysis on the products is performed\n6: We display results with interactive UIs";
+
+"1: Enter the desired product in search box\n2: Wait for the system to return results\n3: Browse the results and make wise choices\n4: For example: Nike, Adidas, etc." = "1: Enter the desired product in search box\n2: Wait for the system to return results\n3: Browse the results and make wise choices\n4: For example: Nike, Adidas, etc.";
+
+
+//Settings
+
+"Account"                                      = "Account";
+"Edit Profile"                                 = "Edit Profile";
+"Language"                                     = "Language";
+"Privacy Policy"                               = "Privacy Policy";
+"Rate this app"                                = "Rate this app";
+"Contact Us"                                   = "Contact Us";
+"Are you sure you want to logout?"             = "Are you sure you want to logout?";
+"Delete Account"                               = "Delete Account";
+
+//Language
+
+"English"                                      = "English";
+
+
+//Error messages
+
+"No Data Found"                                = "No Data Found";
+"No Matches Found"                             = "No Matches Found";
+"No Players Found"                             = "No Players Found";
+"No Leagues Found"                             = "No Leagues Found";
+"No Medias Found"                              = "No Medias Found";
+"No Videos Found"                              = "No Videos Found";
+"No players found"                             = "No players found";
+"No Analyts Found"                             = "No Analyts Found";
+"No Products Found"                            = "No Products Found";
+"No Comments yet!"                             = "No Comments yet!";
+"No Posts yet!"                                = "No Posts yet!";
+
+"It looks like there aren't many great matches for your search" = "It looks like there aren't many great matches for your search";
+"Poor connection. Please try again!"                            = "Poor connection. Please try again!";
+"Oops! Something went wrong. Please try again."                 = "Oops! Something went wrong. Please try again.";
+

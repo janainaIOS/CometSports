@@ -1,0 +1,50 @@
+PODS:
+  - Alamofire (5.7.1)
+  - DGCharts (5.0.0):
+    - DGCharts/Core (= 5.0.0)
+  - DGCharts/Core (5.0.0)
+  - FSCalendar (2.8.4)
+  - GrowingTextView (0.7.2)
+  - IQKeyboardManagerSwift (6.5.11)
+  - Kingfisher (7.8.1)
+  - ProgressHUD (13.7.2)
+  - SwiftSoup (2.6.0)
+  - TOCropViewController (2.6.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - DGCharts
+  - FSCalendar
+  - GrowingTextView
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - ProgressHUD
+  - SwiftSoup
+  - TOCropViewController
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DGCharts
+    - FSCalendar
+    - GrowingTextView
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - ProgressHUD
+    - SwiftSoup
+    - TOCropViewController
+
+SPEC CHECKSUMS:
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  DGCharts: 6e0cf2644e8f81ad13f04caa8bc18502870a1c54
+  FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
+  GrowingTextView: 876bf42005b5e4a4fd740597db12caaf41f0fe6c
+  IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
+  Kingfisher: 63f677311d36a3473f6b978584f8a3845d023dc5
+  ProgressHUD: 093d24ca970f191744017bee2649e37d0cd1c5b9
+  SwiftSoup: dd9baab0fba4b6ab3ade23a6a47132ebd7d22cb1
+  TOCropViewController: edfd4f25713d56905ad1e0b9f5be3fbe0f59c863
+
+PODFILE CHECKSUM: 463fb4bb1e9328c37acfef4b6c6cfb36280421c0
+
+COCOAPODS: 1.12.1

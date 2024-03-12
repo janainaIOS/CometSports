@@ -1,0 +1,13 @@
+/* 
+  InfoPlist.strings
+ Comet Sports
+
+ Created by iosDev on 24/07/2023.
+  
+*/
+
+"CFBundleDisplayName" = "动星体育";
+"CFBundleName"        = "动星体育";
+
+"NSCameraUsageDescription" = "动星体育 想要访问您的相机来上传个人资料照片和运动图片";
+"NSPhotoLibraryUsageDescription" = "动星体育 想要访问您的照片库以上传个人资料照片和运动图片";
