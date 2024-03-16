@@ -668,10 +668,10 @@
 		47B91A4E2B99EEAB00ABF0D9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				470ED52A2B9AD8F200C06037 /* Login */,
 				470ED50D2B9AD8F200C06037 /* TabBar */,
 				470ED5102B9AD8F200C06037 /* Home */,
 				470ED50A2B9AD8F200C06037 /* Analyst */,
-				470ED52A2B9AD8F200C06037 /* Login */,
 				470ED51C2B9AD8F200C06037 /* Match */,
 				470ED5262B9AD8F200C06037 /* Settings */,
 				470ED5052B9AD8F200C06037 /* Store */,
@@ -1201,25 +1201,28 @@
 				CODE_SIGN_ENTITLEMENTS = CometSports/CometSports.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = G8THMDD858;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CometSports/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Comet Sports would like to access your camera to upload profile picture";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Comet Sports would like to access your photo library to upload profile picture";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Home;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sports.CometSportsLive;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sports.CometSportsLive1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = CometSports_Dev_8March2024;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = CometSports_Dev_14March2024;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1238,25 +1241,28 @@
 				CODE_SIGN_ENTITLEMENTS = CometSports/CometSports.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = G8THMDD858;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CometSports/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Comet Sports would like to access your camera to upload profile picture";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Comet Sports would like to access your photo library to upload profile picture";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Home;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sports.CometSportsLive;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sports.CometSportsLive1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = CometSports_Appstore_8March2024;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = CometSports_Appstore_14March2024;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

@@ -53,8 +53,10 @@ class OnboardingVC: UIViewController {
             subTitleLabel.text = "All of your favorite matches in one place".localized
         case 2:
             coverImageView.image =  UIImage(named: "onboarding_2")
-            titleLabel.text = "Price Checker".localized
-            subTitleLabel.text = "Using our AI algorithm find the latest prices for all of your favorite sports products".localized
+            //titleLabel.text = "Price Checker".localized
+           // subTitleLabel.text = "Using our AI algorithm find the latest prices for all of your favorite sports products".localized
+            titleLabel.text = "Live and Upcoming".localized
+            subTitleLabel.text = "Get real-time updates during live matches, including scores and statistics".localized
         default:
             coverImageView.image =  UIImage(named: "onboarding_1")
             titleLabel.text = "Latest Predictions".localized

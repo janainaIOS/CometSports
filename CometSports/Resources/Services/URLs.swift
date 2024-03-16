@@ -73,6 +73,5 @@ struct URLs {
     
     //banner
    
-    static let banner               = bannerBaseURL + "api/v1/banner/com.miracle.sports"
+    static let banner               = bannerBaseURL + "api/v1/banner/com.comet.sports"
 }
-

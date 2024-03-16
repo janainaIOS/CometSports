@@ -1,7 +1,7 @@
 
 import UIKit
 
-let appStoreID   = "6479233964"
+let appStoreID   = "6479392018"
 
 let screenWidth  = UIScreen.main.bounds.width
 let screenHeight = UIScreen.main.bounds.height
