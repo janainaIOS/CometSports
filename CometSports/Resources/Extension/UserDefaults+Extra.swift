@@ -70,6 +70,16 @@ extension UserDefaults {
         }
     }
     
+    var hasUpdate: Int64? {
+        get {
+            return value(forKey: .hasUpdate) as? Int64
+        }
+        set {
+            set(newValue, forKey: .hasUpdate)
+            synchronize()
+        }
+    }
+    
     func clearSpecifiedItems() {
         removeObject(forKey: .token)
         removeObject(forKey: .user)
@@ -84,4 +94,5 @@ extension String {
     static let appLanguage         = "appLanguage"
     static let showSpotLight       = "showSpotLight"
     static let showAlert           = "showMessageAlert"
+    static let hasUpdate           = "hasUpdate"
 }

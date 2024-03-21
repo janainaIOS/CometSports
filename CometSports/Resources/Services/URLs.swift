@@ -5,8 +5,8 @@ let baseURL                         = "https://sportsapi3.com/"
 let socialBaseURL                   = baseURL + "forums/"
 let aiScoreBaseURL                  = baseURL + "sportsapi/api/"
 let predictionBaseURL               = baseURL + "rd-prj/"
-let bannerBaseURL                   = baseURL + "bannerapi/"
-let bannerImageURL                  = "https://api996.com/"
+let photoBaseURL                    = baseURL + "bannerapi/"
+let photoImageURL                   = "https://api996.com/"
 
 struct URLs {
     
@@ -28,7 +28,7 @@ struct URLs {
     static let blockUser            = socialBaseURL + "api/user/block"
     
     //Forum
-    static let allForums            = socialBaseURL + "api/forum/all"
+    static let allForums            = socialBaseURL + "api/forum/all?app=comet"
     static let joinedForums         = socialBaseURL + "api/forum/list/joined"
     static let forumDetail          = socialBaseURL + "api/forum/details/"
     static let forumJoin            = socialBaseURL + "api/forum/join"
@@ -72,6 +72,5 @@ struct URLs {
     static let productImage         = baseURL + "xn/"
     
     //banner
-   
-    static let banner               = bannerBaseURL + "api/v1/banner/com.comet.sports"
+    static let photo                = photoBaseURL + "api/v1/banner/com.comet.sports"
 }

@@ -117,7 +117,7 @@ class CreatePostVC: UIViewController {
         if imageID != 0 {
             param.updateValue([imageID], forKey: "img_ids")
         }
-        activityIndicator.startAnimaton()
+        
         ForumViewModel.shared.addEditPost(isForEdit: isForEdit, postId: postModel?.id ?? 0, parameters: param) { status, message in
             self.activityIndicator.stopAnimaton()
             if status {
@@ -132,6 +132,7 @@ class CreatePostVC: UIViewController {
     }
     
     @IBAction func publishBTNTapped(_ sender: UIButton) {
+        activityIndicator.startAnimaton()
         view.endEditing(true)
         if validate() {
             if let imageData = imageData {

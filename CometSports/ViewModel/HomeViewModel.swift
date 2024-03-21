@@ -17,14 +17,14 @@ enum MatchListType: String {
 class HomeViewModel: NSObject {
     
     static let shared = HomeViewModel()
-    var bannerArray: [Banner] = []
+    var photoArray: [Photo] = []
     
-    func getBannerList(completion:@escaping (Bool, String) -> Void) {
+    func getPhotos(completion:@escaping (Bool, String) -> Void) {
         
-        NetworkManager.shared.initiateAPIRequest(with: URLs.banner, method: .get, encoding: .URLEncoding, decodeType: BannerResponse.self) { model, responseDict, status, message in
-            self.bannerArray.removeAll()
+        NetworkManager.shared.initiateAPIRequest(with: URLs.photo, method: .get, encoding: .URLEncoding, decodeType: PhotoResponse.self) { model, responseDict, status, message in
+            self.photoArray.removeAll()
             if status, let getModel = model {
-                self.bannerArray = getModel.data.top
+                self.photoArray = getModel.data.top
                 completion(true, "")
             } else {
                 completion(false, message)
@@ -109,7 +109,27 @@ class HomeViewModel: NSObject {
         NetworkManager.shared.initiateAPIRequest(with: URLs.footballMatches, method: .get, parameter: parameters, encoding: .URLEncoding, decodeType: MatchListResponse.self) { model, responseDict, status, message in
             
             if let data = model {
-                completion(data.hotMatches ?? [], true, "")
+                if ((data.hotMatches?.isEmpty) != nil) {
+                    self.getLiveMatches { matches, status, messg in
+                        completion(matches, status, "")
+                    }
+                } else {
+                    completion(data.hotMatches ?? [], true, "")
+                }
+            } else {
+                completion([], false, message)
+            }
+        }
+    }
+    
+    func getLiveMatches(completion:@escaping ([MatchList], Bool, String) -> Void) {
+        
+        let parameters: [String: Any] = ["matchStatus":"live"]
+        
+        NetworkManager.shared.initiateAPIRequest(with: URLs.footballMatches, method: .get, parameter: parameters, encoding: .URLEncoding, decodeType: MatchListResponse.self) { model, responseDict, status, message in
+            
+            if let data = model {
+                completion(data.matchList ?? [], true, "")
             } else {
                 completion([], false, message)
             }

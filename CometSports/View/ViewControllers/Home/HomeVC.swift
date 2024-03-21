@@ -11,7 +11,7 @@ import FSCalendar
 enum HomeHeaders: String, CaseIterable {
     case hotMatch    = "Hot Matches"
     case fanZones    = "FanZones"
-    case topNews     = "Top News"
+    case topNews     = "Forums"
     case feed        = "Feed"
     case predictions = "Predictions"
 }
@@ -21,21 +21,24 @@ class HomeVC: UIViewController {
     @IBOutlet weak var userImageIV: UIImageView!
     @IBOutlet weak var hiTextLBL: UILabel!
     @IBOutlet weak var nameLBL: UILabel!
-    @IBOutlet weak var bannerCV: UICollectionView!
+    @IBOutlet weak var updatesCV: UICollectionView!
+    @IBOutlet weak var updateCVheightConstraint: NSLayoutConstraint!
     @IBOutlet weak var listTV: UITableView!
+    @IBOutlet weak var fanzoneCV: UICollectionView!
     
     var activityIndicator: ActivityIndicatorHelper!
     var sectionArray: [HomeHeaders] = []
     var hotMatchArray: [MatchList] = []
     var allHotMatchArray: [MatchList] = []
     var newsArray: [News] = []
+    var allForumArray: [Forum] = []
     var forumArray: [Forum] = []
     var feedArray: [Post] = []
     var predictionArray: [Prediction] = []
     var isPagination = false //news
     var pageNum = 1
     var dayOffset = 0 // 0 -> today, -1 -> yesterday, -2 -> last two days .... max = -7
-    var bannersCount = 0
+    var photosCount = 0
     var timer = Timer()
     var loadFormsOnceMore = true
     
@@ -59,29 +62,30 @@ class HomeVC: UIViewController {
     func configure() {
         activityIndicator = ActivityIndicatorHelper(view: self.view)
         nibInitialization()
-        self.getBannerList()
     }
     
     
     func configureView() {
+        updateCVheightConstraint.constant = 0
         pageNum = 1
         hiTextLBL.text = "Hi,".localized
         if let user = UserDefaults.standard.user {
             userImageIV.setImage(imageStr: user.image, placeholder: Images.user)
             nameLBL.text = user.fullName
-            sectionArray = [.hotMatch, .topNews, .fanZones, .feed, .predictions]
+            sectionArray = [.fanZones, .feed, .topNews, .hotMatch, .predictions]
+            //sectionArray = [.hotMatch, .topNews, .fanZones, .feed, .predictions]
         } else {
             userImageIV.setImage(imageStr: "", placeholder: Images.user)
             nameLBL.text = "Guest User".localized
-            sectionArray = [.hotMatch, .topNews, .fanZones, .predictions]
+            sectionArray = [.fanZones, .topNews, .hotMatch, .predictions]
         }
         getMatchList()
-       getCloudValues()
+        getCloudValues()
     }
     
     func getCloudValues() {
         NotificationViewModel.shared.getNotifications { error in
-             if error != nil{
+            if error != nil{
                 print(error?.localizedDescription ?? "")
             }
             self.showMessageAlert()
@@ -89,6 +93,11 @@ class HomeVC: UIViewController {
     }
     
     func showMessageAlert() {
+        if let hasUpdate = UserDefaults.standard.hasUpdate, hasUpdate == 1 {
+            let ratioVlaue = (screenWidth - 30) / 21
+            updateCVheightConstraint.constant = ratioVlaue * 9
+            self.getUpdates()
+        }
         if let showAlert = UserDefaults.standard.showAlert, showAlert == 1 {
             let cloudDetail = NotificationViewModel.shared.notification
             showAlert1(message: cloudDetail?.message ?? "") {
@@ -108,31 +117,32 @@ class HomeVC: UIViewController {
         let nib4 = UINib(nibName: "EmptyTableCell", bundle: nil)
         listTV?.register(nib4, forCellReuseIdentifier: "EmptyTableCell")
         let nib5 = UINib(nibName: "ImageCollectionCell", bundle: nil)
-        bannerCV.register(nib5, forCellWithReuseIdentifier: "ImageCollectionCell")
+        updatesCV.register(nib5, forCellWithReuseIdentifier: "ImageCollectionCell")
+        fanzoneCV.register(nib5, forCellWithReuseIdentifier: "ImageCollectionCell")
     }
     
     @objc func configureSettingView()  {
         //  backBTN.isHidden = !(UserDefaults.standard.showSettingBTN ?? false)
     }
     
-    func getBannerList() {
+    func getUpdates() {
         activityIndicator.startAnimaton()
-        HomeViewModel.shared.getBannerList { status, errorMsg  in
+        HomeViewModel.shared.getPhotos { status, errorMsg  in
             if status {
-                if self.bannersCount == 0 {
-                    self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(self.pageControllerForBanners), userInfo: nil, repeats: true)
+                if self.photosCount == 0 {
+                    self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(self.pageControllerForUpdates), userInfo: nil, repeats: true)
                 }
             } else {
                 Toast.show(message: errorMsg, view: self.view)
             }
-            self.bannerCV.reloadData()
+            self.updatesCV.reloadData()
         }
     }
     
     func getMatchList() {
         activityIndicator.startAnimaton()
         HomeViewModel.shared.getHotMatches { matches, status, errorMsg in
-           // self.activityIndicator.stopAnimaton()
+            // self.activityIndicator.stopAnimaton()
             self.getNewsList()
             self.allHotMatchArray = matches
             self.hotMatchArray = Array(matches.prefix(3))
@@ -160,7 +170,7 @@ class HomeVC: UIViewController {
             } else {
                 Toast.show(message: errorMsg, view: self.view)
             }
-           // self.listTV.reloadData()
+            // self.listTV.reloadData()
         }
     }
     
@@ -171,6 +181,8 @@ class HomeVC: UIViewController {
             if let user = UserDefaults.standard.user {
                 self.getFeedList()
             }
+            self.allForumArray = forums
+            self.fanzoneCV.reloadData()
             self.forumArray = Array(forums.prefix(1))
             if status {
                 for (_index, forum) in self.forumArray.enumerated() {
@@ -213,7 +225,7 @@ class HomeVC: UIViewController {
     }
     
     func getPredictions() {
-       activityIndicator.startAnimaton()
+        activityIndicator.startAnimaton()
         HomeViewModel.shared.getPredictions { predictions, status, errorMsg in
             self.activityIndicator.stopAnimaton()
             
@@ -225,19 +237,19 @@ class HomeVC: UIViewController {
         }
     }
     
-    @objc func pageControllerForBanners() {
-        let dataCount = HomeViewModel.shared.bannerArray.count
+    @objc func pageControllerForUpdates() {
+        let dataCount = HomeViewModel.shared.photoArray.count
         
         let count = min(dataCount, 3)
-        if bannersCount < count {
-            let index = IndexPath.init(row: bannersCount, section: 0)
-            bannerCV.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
+        if photosCount < count {
+            let index = IndexPath.init(row: photosCount, section: 0)
+            updatesCV.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
         } else {
-            bannersCount = 0
-            let index = IndexPath.init(row: bannersCount, section: 0)
-            bannerCV.scrollToItem(at: index, at: .centeredHorizontally, animated: false)
+            photosCount = 0
+            let index = IndexPath.init(row: photosCount, section: 0)
+            updatesCV.scrollToItem(at: index, at: .centeredHorizontally, animated: false)
         }
-        bannersCount = (bannersCount + 1) % dataCount
+        photosCount = (photosCount + 1) % dataCount
     }
     
     
@@ -377,29 +389,48 @@ class HomeVC: UIViewController {
 // MARK: - CollectionView Delegates
 extension HomeVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return HomeViewModel.shared.bannerArray.count
+        if collectionView == updatesCV {
+            return HomeViewModel.shared.photoArray.count
+        } else {
+            return allForumArray.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCollectionCell", for: indexPath) as! ImageCollectionCell
-        cell.imageIV.setImage(imageStr: bannerImageURL + HomeViewModel.shared.bannerArray[indexPath.item].coverPath, placeholder: Images.noImage)
+        if collectionView == updatesCV {
+            cell.imageIV.setImage(imageStr: photoImageURL + HomeViewModel.shared.photoArray[indexPath.item].coverPath, placeholder: Images.noImage)
+            cell.imageIV.cornerRadius = 10
+        } else {
+            cell.imageIV.setImage(imageStr: allForumArray[indexPath.item].coverImageURL, placeholder: Images.fanZOne)
+            cell.imageIV.cornerRadius = 40
+        }
+        
         return cell
     }
 }
 
 extension HomeVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let bannerMesssage = HomeViewModel.shared.bannerArray[indexPath.item].message
-        if bannerMesssage.contains("http") || bannerMesssage.contains("www"){
-            guard let url = URL(string: bannerMesssage) else { return }
+        if collectionView == updatesCV {
+            let updateData = HomeViewModel.shared.photoArray[indexPath.item].message
+            guard let url = URL(string: updateData) else { return }
             UIApplication.shared.open(url)
+        } else {
+            let nextVC = Storyboards.home.instantiateViewController(withIdentifier: "FanZoneDetailVC") as! FanZoneDetailVC
+            nextVC.forumModel.forumUniqueID = allForumArray[indexPath.row].forumUniqueID
+            self.navigationController?.pushViewController(nextVC, animated: true)
         }
     }
 }
 
 extension HomeVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height - 5)
+        if collectionView == updatesCV {
+            return CGSize(width: collectionView.frame.width, height: collectionView.frame.height - 5)
+        } else {
+            return CGSize(width: collectionView.frame.height - 5, height: collectionView.frame.height - 5)
+        }
     }
 }
 
@@ -497,7 +528,7 @@ extension HomeVC: UITableViewDelegate {
         let headerView = tableView.dequeueReusableCell(withIdentifier: "HomeHeaderTableCell") as! HomeHeaderTableCell
         headerView.configure(section: sectionArray[section], tag: section)
         headerView.seeAllBTN.addTarget(self, action: #selector(seeAllBTNTapped(sender:)), for: .touchUpInside)
-        if section == 0 && allHotMatchArray.count <= 3 {
+        if sectionArray[section] == .hotMatch && allHotMatchArray.count <= 3 {
             headerView.seeAllBTN.isHidden = true
         } else {
             headerView.seeAllBTN.isHidden = headerView.seeAllBTN.isHidden

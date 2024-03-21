@@ -1,21 +1,21 @@
 //
-//  Banner.swift
-//  Comet Sports
+//  Photo.swift
+//  CometSports
 //
-//  Created by iosDev on 15/02/2024.
+//  Created by Qasr01 on 20/03/2024.
 //
 
 import Foundation
 
-struct BannerResponse: Decodable {
-    let data: BannerData
+struct PhotoResponse: Decodable {
+    let data: PhotoData
 }
 
-struct BannerData: Decodable {
-    let top: [Banner]
+struct PhotoData: Decodable {
+    let top: [Photo]
 }
 
-struct Banner: Decodable {
+struct Photo: Decodable {
     let id, title, coverPath, thumbnailPath: String
     let message, createdAt: String
 

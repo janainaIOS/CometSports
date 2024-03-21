@@ -22,7 +22,7 @@ class NetworkManager {
     func initiateAPIRequest<T: Decodable>(with url: String, method: HTTPMethod = .post, parameter: [String: Any] = [:], encoding: Encoding = .JSONEncoding, decodeType: T.Type, completion: @escaping(T?, [String: Any]?, Bool, String) -> Void) {
         let parameterEncoding: ParameterEncoding = encoding == .URLEncoding ? URLEncoding.default : JSONEncoding.default
         
-     //   print("[Request] [\(method.rawValue)]:==> \(url)     [Parameters] :==> \(parameter)")
+   // print("[Request] [\(method.rawValue)]:==> \(url)     [Parameters] :==> \(parameter)")
         
         if Connectivity.isConnectedToInternet() {
             AF.request(url, method: method, parameters: parameter, encoding: parameterEncoding, headers: getHeader())
@@ -39,7 +39,7 @@ class NetworkManager {
                         
                         let _response = try? JSONSerialization.jsonObject(with: responseData, options: [])
                         var responseDictionary = _response as? [String: Any]
-                    
+                        
                         if responseDictionary == nil {
                             if _response is [[String: Any]] {
                                 responseDictionary = ["data" : _response ?? []]
@@ -48,7 +48,7 @@ class NetworkManager {
                             }
                         }
                         
-                     //   print("[Response] :==> \(url)\n\(responseDictionary ?? [:])")
+                 //  print("[Response] :==> \(url)\n\(responseDictionary ?? [:])")
                         
                         //Find error or success
                         var messageText = responseDictionary?["error"] as? String ?? ""
@@ -91,7 +91,7 @@ class NetworkManager {
     
     func initiateMultipartFormDataAPIRequest<T: Decodable>(with url: String, method: HTTPMethod = .post, parameter: [String: Any], imageData: Data? = nil, imageName: String, decodeType: T.Type, completion: @escaping (T?, [String: Any]?, Bool, String) -> Void) {
         
-       // print("[Request] :==> \(url)")
+        // print("[Request] :==> \(url)")
         
         if Connectivity.isConnectedToInternet() {
             AF.upload(
@@ -116,7 +116,7 @@ class NetworkManager {
                     
                     let _response = try? JSONSerialization.jsonObject(with: responseData, options: [])
                     let responseDictionary = _response as? [String: Any]
-                  //  print("[Response] :==> \(responseDictionary ?? [:])")
+                    //  print("[Response] :==> \(responseDictionary ?? [:])")
                     
                     //Find error or success
                     var messageText = responseDictionary?["error"] as? String ?? ""

@@ -50,6 +50,7 @@ struct Forum: Codable {
     var body: String = ""
     var forumUniqueID: String = ""
     var coverImageURL: String = ""
+    var coverImage2: String = ""
     var postList: [Post] = []
     var hasJoined: Bool = false
     
@@ -60,6 +61,7 @@ struct Forum: Codable {
         case id, title, body, hasJoined
         case forumUniqueID = "forum_unique_id"
         case coverImageURL = "cover_image_url"
+        case coverImage2 = "cover_img_url"
     }
     init () {}
     init(from decoder: Decoder) throws {
@@ -69,6 +71,10 @@ struct Forum: Codable {
         body = try (container.decodeIfPresent(String.self, forKey: .body) ?? "")
         forumUniqueID = try (container.decodeIfPresent(String.self, forKey: .forumUniqueID) ?? "")
         coverImageURL = try (container.decodeIfPresent(String.self, forKey: .coverImageURL) ?? "")
+        coverImage2 = try (container.decodeIfPresent(String.self, forKey: .coverImage2) ?? "")
+        if coverImageURL == "" {
+            coverImageURL = coverImage2
+        }
         hasJoined = try (container.decodeIfPresent(Bool.self, forKey: .hasJoined) ?? false)
     }
 }

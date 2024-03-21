@@ -29,7 +29,7 @@ class PostCollectionCell: UICollectionViewCell {
     func configure(model: Post?, feedCell: Bool = true, _index: Int) {
         userImageIV.setImage(imageStr: model?.user?.image ?? "", placeholder: Images.user)
         userNameLBL.text = model?.user?.fullName
-        nameTopConstraint.constant = feedCell == true ? 0 : 10
+      //  nameTopConstraint.constant = feedCell == true ? 0 : 5
         forumNameLBL.text = feedCell == true ? model?.forumName ?? "" : ""
         dateLBL.text = model?.createdAt?.formatDate2(inputFormat: dateFormat.yyyyMMddHHmmss)
         titleLBL.text = model?.title

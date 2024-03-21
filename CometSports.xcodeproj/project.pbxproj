@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		470114ED2BAAAE06002D5AEA /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470114EC2BAAAE06002D5AEA /* Photo.swift */; };
 		470ED4ED2B9AD86500C06037 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 470ED4E72B9AD86500C06037 /* Localizable.strings */; };
 		470ED4EE2B9AD86500C06037 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 470ED4E92B9AD86500C06037 /* InfoPlist.strings */; };
 		470ED4FB2B9AD89C00C06037 /* manrope-semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 470ED4F02B9AD89C00C06037 /* manrope-semibold.otf */; };
@@ -74,7 +75,6 @@
 		47B91A472B99EE6500ABF0D9 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B91A3A2B99EE6500ABF0D9 /* Notification.swift */; };
 		47B91A482B99EE6500ABF0D9 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B91A3B2B99EE6500ABF0D9 /* Post.swift */; };
 		47B91A492B99EE6500ABF0D9 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B91A3C2B99EE6500ABF0D9 /* Match.swift */; };
-		47B91A4A2B99EE6500ABF0D9 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B91A3D2B99EE6500ABF0D9 /* Banner.swift */; };
 		47B91A4B2B99EE6500ABF0D9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B91A3E2B99EE6500ABF0D9 /* User.swift */; };
 		47B91A782B99EEFE00ABF0D9 /* PredictionTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B91A4F2B99EEFE00ABF0D9 /* PredictionTableCell.swift */; };
 		47B91A792B99EEFE00ABF0D9 /* MatchesTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47B91A502B99EEFE00ABF0D9 /* MatchesTableCell.xib */; };
@@ -133,7 +133,6 @@
 		47B91AC42B99EF0B00ABF0D9 /* PostCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B91AAE2B99EF0B00ABF0D9 /* PostCollectionCell.swift */; };
 		47B91AC52B99EF0B00ABF0D9 /* FormPostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B91AAF2B99EF0B00ABF0D9 /* FormPostCollectionViewCell.swift */; };
 		47B91AC62B99EF0B00ABF0D9 /* ImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B91AB02B99EF0B00ABF0D9 /* ImageCollectionCell.swift */; };
-		47B91AC72B99EF0B00ABF0D9 /* BannerCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B91AB12B99EF0B00ABF0D9 /* BannerCollectionCell.swift */; };
 		47B91AC82B99EF0B00ABF0D9 /* AnalystGridCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B91AB22B99EF0B00ABF0D9 /* AnalystGridCollectionCell.swift */; };
 		47B91AC92B99EF0B00ABF0D9 /* ImageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47B91AB32B99EF0B00ABF0D9 /* ImageCollectionCell.xib */; };
 		47B91ACA2B99EF0B00ABF0D9 /* AnalystGridCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47B91AB42B99EF0B00ABF0D9 /* AnalystGridCollectionCell.xib */; };
@@ -179,6 +178,7 @@
 /* Begin PBXFileReference section */
 		3601A8F5FB18D333BC775ED7 /* Pods-CometSports.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CometSports.debug.xcconfig"; path = "Target Support Files/Pods-CometSports/Pods-CometSports.debug.xcconfig"; sourceTree = "<group>"; };
 		3B70EB7A1E1145A69F9713E5 /* Pods_CometSports.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CometSports.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		470114EC2BAAAE06002D5AEA /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		470ED4E82B9AD86500C06037 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		470ED4EA2B9AD86500C06037 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		470ED4EB2B9AD86500C06037 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -251,7 +251,6 @@
 		47B91A3A2B99EE6500ABF0D9 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		47B91A3B2B99EE6500ABF0D9 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		47B91A3C2B99EE6500ABF0D9 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
-		47B91A3D2B99EE6500ABF0D9 /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		47B91A3E2B99EE6500ABF0D9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		47B91A4F2B99EEFE00ABF0D9 /* PredictionTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredictionTableCell.swift; sourceTree = "<group>"; };
 		47B91A502B99EEFE00ABF0D9 /* MatchesTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MatchesTableCell.xib; sourceTree = "<group>"; };
@@ -310,7 +309,6 @@
 		47B91AAE2B99EF0B00ABF0D9 /* PostCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCollectionCell.swift; sourceTree = "<group>"; };
 		47B91AAF2B99EF0B00ABF0D9 /* FormPostCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormPostCollectionViewCell.swift; sourceTree = "<group>"; };
 		47B91AB02B99EF0B00ABF0D9 /* ImageCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionCell.swift; sourceTree = "<group>"; };
-		47B91AB12B99EF0B00ABF0D9 /* BannerCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerCollectionCell.swift; sourceTree = "<group>"; };
 		47B91AB22B99EF0B00ABF0D9 /* AnalystGridCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalystGridCollectionCell.swift; sourceTree = "<group>"; };
 		47B91AB32B99EF0B00ABF0D9 /* ImageCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionCell.xib; sourceTree = "<group>"; };
 		47B91AB42B99EF0B00ABF0D9 /* AnalystGridCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnalystGridCollectionCell.xib; sourceTree = "<group>"; };
@@ -377,9 +375,9 @@
 		470ED4EF2B9AD89C00C06037 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				470ED4F22B9AD89C00C06037 /* Fonts+Extra.swift */,
 				470ED4F02B9AD89C00C06037 /* manrope-semibold.otf */,
 				470ED4F12B9AD89C00C06037 /* manrope-medium.otf */,
-				470ED4F22B9AD89C00C06037 /* Fonts+Extra.swift */,
 				470ED4F32B9AD89C00C06037 /* manrope-bold.otf */,
 				470ED4F42B9AD89C00C06037 /* manrope-light.otf */,
 				470ED4F52B9AD89C00C06037 /* manrope-thin.otf */,
@@ -578,9 +576,9 @@
 			isa = PBXGroup;
 			children = (
 				47B91A332B99EE6500ABF0D9 /* Analyst.swift */,
-				47B91A3D2B99EE6500ABF0D9 /* Banner.swift */,
 				47B91A392B99EE6500ABF0D9 /* BreakingNews.swift */,
 				47B91A372B99EE6500ABF0D9 /* Comment.swift */,
+				470114EC2BAAAE06002D5AEA /* Photo.swift */,
 				47B91A342B99EE6500ABF0D9 /* Forum.swift */,
 				47B91A3C2B99EE6500ABF0D9 /* Match.swift */,
 				47B91A382B99EE6500ABF0D9 /* MatchList.swift */,
@@ -599,7 +597,6 @@
 			children = (
 				47B91AB22B99EF0B00ABF0D9 /* AnalystGridCollectionCell.swift */,
 				47B91AB42B99EF0B00ABF0D9 /* AnalystGridCollectionCell.xib */,
-				47B91AB12B99EF0B00ABF0D9 /* BannerCollectionCell.swift */,
 				47B91AA32B99EF0B00ABF0D9 /* CalenderCollectionCell.swift */,
 				47B91AA72B99EF0B00ABF0D9 /* FanzCollectionCell.swift */,
 				47B91AAF2B99EF0B00ABF0D9 /* FormPostCollectionViewCell.swift */,
@@ -999,7 +996,6 @@
 				47B91A882B99EEFE00ABF0D9 /* MediaTableCell.swift in Sources */,
 				47B91AC42B99EF0B00ABF0D9 /* PostCollectionCell.swift in Sources */,
 				47B91ABC2B99EF0B00ABF0D9 /* StoreListCollectionCell.swift in Sources */,
-				47B91A4A2B99EE6500ABF0D9 /* Banner.swift in Sources */,
 				47B91AF82B99EFFC00ABF0D9 /* FeedImageCVLayout.swift in Sources */,
 				470ED5312B9AD8F200C06037 /* ImageVC.swift in Sources */,
 				470ED5042B9AD89C00C06037 /* URLs.swift in Sources */,
@@ -1007,6 +1003,7 @@
 				470ED5392B9AD8F200C06037 /* AiScoreMatchDetailVC.swift in Sources */,
 				47B91AC62B99EF0B00ABF0D9 /* ImageCollectionCell.swift in Sources */,
 				47B91A8C2B99EEFE00ABF0D9 /* SettingsTableCell.swift in Sources */,
+				470114ED2BAAAE06002D5AEA /* Photo.swift in Sources */,
 				470ED5372B9AD8F200C06037 /* CommentsVC.swift in Sources */,
 				470ED54B2B9AD8F200C06037 /* EditProfileVC.swift in Sources */,
 				47B91A782B99EEFE00ABF0D9 /* PredictionTableCell.swift in Sources */,
@@ -1021,7 +1018,6 @@
 				47B91A8B2B99EEFE00ABF0D9 /* CommentTableCell.swift in Sources */,
 				470ED5402B9AD8F200C06037 /* InitialVC.swift in Sources */,
 				47B91A422B99EE6500ABF0D9 /* Product.swift in Sources */,
-				47B91AC72B99EF0B00ABF0D9 /* BannerCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1201,7 +1197,7 @@
 				CODE_SIGN_ENTITLEMENTS = CometSports/CometSports.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = G8THMDD858;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1241,7 +1237,7 @@
 				CODE_SIGN_ENTITLEMENTS = CometSports/CometSports.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = G8THMDD858;
 				GENERATE_INFOPLIST_FILE = YES;

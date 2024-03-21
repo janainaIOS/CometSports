@@ -33,7 +33,6 @@ class FanZoneTableCell: UITableViewCell {
     }
     
     func configure(model: Forum, _index: Int) {
-        print("---fan \(model.postList.count)")
         postArray = model.postList
         imageIV.setImage(imageStr: model.coverImageURL, placeholder: Images.fanZOne)
         titleLBL.text = model.title

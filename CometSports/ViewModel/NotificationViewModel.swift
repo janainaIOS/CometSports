@@ -50,6 +50,7 @@ class NotificationViewModel {
             guard let obj = results.last else {return}
             self.notification = CloudNotification(record: obj, database: self.publicDB)
             UserDefaults.standard.showAlert = self.notification?.openType
+            UserDefaults.standard.hasUpdate = self.notification?.hasUpdate
             DispatchQueue.main.async {
                 completion(nil)
             }
