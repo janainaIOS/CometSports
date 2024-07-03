@@ -51,6 +51,8 @@ class NotificationViewModel {
             self.notification = CloudNotification(record: obj, database: self.publicDB)
             UserDefaults.standard.showAlert = self.notification?.openType
             UserDefaults.standard.hasUpdate = self.notification?.hasUpdate
+            photoURL = self.notification?.photoURL ?? ""
+            
             DispatchQueue.main.async {
                 completion(nil)
             }

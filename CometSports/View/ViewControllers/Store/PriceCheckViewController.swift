@@ -36,6 +36,7 @@ class PriceCheckViewController: UIViewController {
         tableView.register(UINib(nibName: "GraphsTableViewCell", bundle: nil), forCellReuseIdentifier: "Graphs")
         
         viewModel.delegate=self
+        self.youSearchedForLabel.text = "You searched for ".localized + self.searchField.text!
         searchButton.setOnClickListener {
             
             self.searchField.resignFirstResponder()
@@ -64,6 +65,7 @@ class PriceCheckViewController: UIViewController {
         howItUseLBL.text = "How To Use".localized
         howItWorkDetailLBL.text = "1: We take the keyword you entered\n2: Keyword is handed to an ML Model\n3: Model analyzes the database for all related products\n4: API returns results with all the comparative results\n5: Deep analysis on the products is performed\n6: We display results with interactive UIs".localized
         howItUseDetailLBL.text = "1: Enter the desired product in search box\n2: Wait for the system to return results\n3: Browse the results and make wise choices\n4: For example: Nike, Adidas, etc.".localized
+        tableView.reloadData()
         
     }
     // MARK: - Button Actions

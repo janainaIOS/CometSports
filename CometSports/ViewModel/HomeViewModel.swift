@@ -21,7 +21,7 @@ class HomeViewModel: NSObject {
     
     func getPhotos(completion:@escaping (Bool, String) -> Void) {
         
-        NetworkManager.shared.initiateAPIRequest(with: URLs.photo, method: .get, encoding: .URLEncoding, decodeType: PhotoResponse.self) { model, responseDict, status, message in
+        NetworkManager.shared.initiateAPIRequest(with: photoURL, method: .get, encoding: .URLEncoding, decodeType: PhotoResponse.self) { model, responseDict, status, message in
             self.photoArray.removeAll()
             if status, let getModel = model {
                 self.photoArray = getModel.data.top
@@ -33,7 +33,8 @@ class HomeViewModel: NSObject {
     }
     
     func getNewsList(pageNum: Int, dayoffset: Int, completion:@escaping ([News], Bool, String) -> Void) {
-        let url = URLs.news + "\(selectedLang == .en ? "en" : "cn")/\(pageNum)?dayoffsets=\(dayoffset)"
+       // let url = URLs.news + "\(selectedLang == .en ? "en" : "cn")/\(pageNum)?dayoffsets=\(dayoffset)"
+        let url = URLs.news + "\(selectedLang == .en ? "en" : "cn")/\(pageNum)"
         NetworkManager.shared.initiateAPIRequest(with: url, method: .get, encoding: .URLEncoding, decodeType: NewsResponse.self) { model, responseDict, status, message in
             
             if let data = model?.list {

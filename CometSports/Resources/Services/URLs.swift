@@ -5,8 +5,8 @@ let baseURL                         = "https://sportsapi3.com/"
 let socialBaseURL                   = baseURL + "forums/"
 let aiScoreBaseURL                  = baseURL + "sportsapi/api/"
 let predictionBaseURL               = baseURL + "rd-prj/"
-let photoBaseURL                    = baseURL + "bannerapi/"
 let photoImageURL                   = "https://api996.com/"
+var photoURL                        = ""
 
 struct URLs {
     
@@ -42,8 +42,8 @@ struct URLs {
     static let prediction           = predictionBaseURL + "api/prediction/popular/match/top/prediction/list?skippopular=true"
     
     //News
-    static let news                 = baseURL + "api/post-list/"
-    static let newsDetail           = baseURL + "api/post/"
+    static let news                 = baseURL + "sevenfive/api/post-list/"
+    static let newsDetail           = baseURL + "sevenfive/api/post/"
     
     //Comments
     static let commentList          = socialBaseURL + "api/user/comment/list"
@@ -70,7 +70,5 @@ struct URLs {
     static let productListTag       = baseURL + "xn/api/v1/product-list-by-tag/"
     static let productDetail        = baseURL + "xn/api/v1/product-info/"
     static let productImage         = baseURL + "xn/"
-    
-    //banner
-    static let photo                = photoBaseURL + "api/v1/banner/com.comet.sports"
+   
 }

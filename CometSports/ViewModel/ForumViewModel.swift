@@ -25,8 +25,9 @@ class ForumViewModel: NSObject {
         NetworkManager.shared.initiateAPIRequest(with: URLs.allForums, method: .get, parameter: parameters, encoding: .URLEncoding, decodeType: ForumListResponse.self) { model, responseDict, status, message in
             
             if let data = model?.response {
-                var forums = data.data ?? []
+                 var forums = data.data ?? []
                 forums.mapProperty(\.hasJoined, false)
+                forums = forums.filter({$0.forumUniqueID != "MyTeam"})
                 completion(forums, true, "")
             } else {
                 completion([], false, message)

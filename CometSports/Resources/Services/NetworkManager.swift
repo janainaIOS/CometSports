@@ -22,7 +22,7 @@ class NetworkManager {
     func initiateAPIRequest<T: Decodable>(with url: String, method: HTTPMethod = .post, parameter: [String: Any] = [:], encoding: Encoding = .JSONEncoding, decodeType: T.Type, completion: @escaping(T?, [String: Any]?, Bool, String) -> Void) {
         let parameterEncoding: ParameterEncoding = encoding == .URLEncoding ? URLEncoding.default : JSONEncoding.default
         
-   // print("[Request] [\(method.rawValue)]:==> \(url)     [Parameters] :==> \(parameter)")
+  // print("[Request] [\(method.rawValue)]:==> \(url)     [Parameters] :==> \(parameter)")
         
         if Connectivity.isConnectedToInternet() {
             AF.request(url, method: method, parameters: parameter, encoding: parameterEncoding, headers: getHeader())
@@ -48,7 +48,7 @@ class NetworkManager {
                             }
                         }
                         
-                 //  print("[Response] :==> \(url)\n\(responseDictionary ?? [:])")
+               //  print("[Response] :==> \(url)\n\(responseDictionary ?? [:])")
                         
                         //Find error or success
                         var messageText = responseDictionary?["error"] as? String ?? ""

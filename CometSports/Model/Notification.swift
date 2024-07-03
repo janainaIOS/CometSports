@@ -15,6 +15,7 @@ class CloudNotification {
     var keyword: String = ""
     var url: String = ""
     var message: String = ""
+    var photoURL: String = ""
     
     init?(record: CKRecord, database: CKDatabase) {
         self.hasUpdate = record["hasUpdate"] as? Int64 ?? 0
@@ -22,5 +23,6 @@ class CloudNotification {
         self.keyword = record["keyword"] as? String ?? ""
         self.url = record["url"] as? String ?? ""
         self.message = record["message"] as? String ?? ""
+        self.photoURL = record["photoURL"] as? String ?? ""
     }
 }

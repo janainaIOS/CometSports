@@ -1668,7 +1668,7 @@
                                                                 <rect key="frame" x="107.66666666666666" y="0.0" width="107.66666666666666" height="120"/>
                                                                 <subviews>
                                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOq-DX-yAc">
-                                                                        <rect key="frame" x="35.333333333333343" y="0.0" width="37" height="34.666666666666664"/>
+                                                                        <rect key="frame" x="36" y="0.0" width="36" height="29.333333333333332"/>
                                                                         <color key="backgroundColor" name="violet1"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1677,13 +1677,13 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgJ-bC-gHb">
-                                                                        <rect key="frame" x="48.333333333333343" y="0.0" width="11" height="34.666666666666664"/>
+                                                                        <rect key="frame" x="49" y="0.0" width="10" height="29.333333333333332"/>
                                                                         <fontDescription key="fontDescription" name="Manrope-Bold" family="Manrope" pointSize="25"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHZ-dD-iOe">
-                                                                        <rect key="frame" x="50.666666666666686" y="43.666666666666657" width="6.6666666666666643" height="20"/>
+                                                                        <rect key="frame" x="51" y="38.333333333333343" width="6" height="20"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="20" id="yRX-gn-3eI"/>
                                                                         </constraints>
@@ -1700,7 +1700,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEB-Hh-saE">
-                                                                        <rect key="frame" x="0.0" y="63.666666666666657" width="107.66666666666667" height="20"/>
+                                                                        <rect key="frame" x="0.0" y="58.333333333333343" width="107.66666666666667" height="20"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="20" id="1SE-lW-gkX"/>
                                                                         </constraints>
@@ -1886,7 +1886,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Match Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjO-D1-6CB">
-                                        <rect key="frame" x="59.999999999999993" y="61.666666666666657" width="112.33333333333331" height="25"/>
+                                        <rect key="frame" x="60.000000000000007" y="63.666666666666657" width="101.66666666666669" height="21"/>
                                         <fontDescription key="fontDescription" name="Manrope-Semibold" family="Manrope" pointSize="18"/>
                                         <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -3259,13 +3259,13 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8n9-yZ-Xva">
-                                                            <rect key="frame" x="74" y="54.666666666666664" width="228" height="20.666666666666664"/>
+                                                            <rect key="frame" x="74" y="58.999999999999993" width="228" height="17.666666666666664"/>
                                                             <fontDescription key="fontDescription" name="Manrope-Medium" family="Manrope" pointSize="15"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2CN-xu-Yd2">
-                                                            <rect key="frame" x="74" y="78.333333333333329" width="228" height="16.666666666666671"/>
+                                                            <rect key="frame" x="74" y="79.666666666666671" width="228" height="14"/>
                                                             <fontDescription key="fontDescription" name="Manrope-Light" family="Manrope" pointSize="12"/>
                                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -3346,7 +3346,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FanZone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jke-VF-b5Y">
-                                        <rect key="frame" x="170.66666666666666" y="62.333333333333336" width="72.666666666666657" height="23.666666666666664"/>
+                                        <rect key="frame" x="173.33333333333334" y="64" width="67.333333333333343" height="20"/>
                                         <fontDescription key="fontDescription" name="Manrope-Medium" family="Manrope" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -4785,7 +4785,7 @@
                                                                 <rect key="frame" x="107.66666666666666" y="0.0" width="107.66666666666666" height="120"/>
                                                                 <subviews>
                                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3c2-xj-Jdh">
-                                                                        <rect key="frame" x="35.333333333333343" y="0.0" width="37" height="34.666666666666664"/>
+                                                                        <rect key="frame" x="36" y="0.0" width="36" height="29.333333333333332"/>
                                                                         <color key="backgroundColor" name="violet1"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -4794,13 +4794,13 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Umc-T0-Zxb">
-                                                                        <rect key="frame" x="48.333333333333343" y="0.0" width="11" height="34.666666666666664"/>
+                                                                        <rect key="frame" x="49" y="0.0" width="10" height="29.333333333333332"/>
                                                                         <fontDescription key="fontDescription" name="Manrope-Bold" family="Manrope" pointSize="25"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNR-Fe-Vra">
-                                                                        <rect key="frame" x="51" y="43.666666666666657" width="6" height="20"/>
+                                                                        <rect key="frame" x="51.333333333333343" y="38.333333333333343" width="5.3333333333333357" height="20"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="20" id="rhM-8l-Woy"/>
                                                                         </constraints>
@@ -4817,7 +4817,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHO-xs-F7T">
-                                                                        <rect key="frame" x="0.0" y="63.666666666666657" width="107.66666666666667" height="20"/>
+                                                                        <rect key="frame" x="0.0" y="58.333333333333343" width="107.66666666666667" height="20"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="20" id="wKn-PF-AdQ"/>
                                                                         </constraints>
@@ -4973,13 +4973,13 @@
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mc8-vE-87j">
-                                                                    <rect key="frame" x="0.0" y="12.333333333333334" width="35.666666666666664" height="19.333333333333329"/>
+                                                                    <rect key="frame" x="0.0" y="13.666666666666666" width="34.333333333333336" height="16.333333333333336"/>
                                                                     <fontDescription key="fontDescription" name="Manrope-Light" family="Manrope" pointSize="14"/>
                                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYI-Y1-mds">
-                                                                    <rect key="frame" x="37.666666666666657" y="12.333333333333334" width="325.33333333333337" height="19.333333333333329"/>
+                                                                    <rect key="frame" x="36.333333333333343" y="13.666666666666666" width="326.66666666666663" height="16.333333333333336"/>
                                                                     <fontDescription key="fontDescription" name="Manrope-Medium" family="Manrope" pointSize="14"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -5010,7 +5010,7 @@
                                                                     <rect key="frame" x="0.0" y="10" width="363" height="34"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNY-wf-kSz">
-                                                                            <rect key="frame" x="162" y="6.6666666666666661" width="39.333333333333343" height="20.666666666666671"/>
+                                                                            <rect key="frame" x="163" y="8.3333333333333304" width="37" height="17.666666666666671"/>
                                                                             <fontDescription key="fontDescription" name="Manrope-Medium" family="Manrope" pointSize="15"/>
                                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
@@ -5035,7 +5035,7 @@
                                                                             <rect key="frame" x="0.0" y="0.0" width="121" height="80"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzf-4G-JUE">
-                                                                                    <rect key="frame" x="57.333333333333336" y="21.666666666666671" width="6.3333333333333357" height="21"/>
+                                                                                    <rect key="frame" x="57.666666666666664" y="21.666666666666671" width="5.6666666666666643" height="21"/>
                                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="21" id="97n-xh-3ws"/>
@@ -5050,7 +5050,7 @@
                                                                                     </userDefinedRuntimeAttributes>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jj9-c1-WhD">
-                                                                                    <rect key="frame" x="57.333333333333336" y="52.666666666666671" width="6.6666666666666643" height="21"/>
+                                                                                    <rect key="frame" x="57.666666666666664" y="52.666666666666671" width="6" height="21"/>
                                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="21" id="xuz-Sq-3TX"/>
@@ -5085,7 +5085,7 @@
                                                                                     </constraints>
                                                                                 </view>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkJ-Rd-TJF">
-                                                                                    <rect key="frame" x="57.333333333333343" y="21.666666666666671" width="6.3333333333333357" height="21"/>
+                                                                                    <rect key="frame" x="57.666666666666657" y="21.666666666666671" width="5.6666666666666643" height="21"/>
                                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="21" id="ykl-wa-E15"/>
@@ -5100,7 +5100,7 @@
                                                                                     </userDefinedRuntimeAttributes>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6z-2H-Ra3">
-                                                                                    <rect key="frame" x="57.333333333333343" y="52.666666666666671" width="6.6666666666666714" height="21"/>
+                                                                                    <rect key="frame" x="57.666666666666657" y="52.666666666666671" width="6" height="21"/>
                                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="21" id="dwM-2x-qCy"/>
@@ -5142,7 +5142,7 @@
                                                                             <rect key="frame" x="242" y="0.0" width="121" height="80"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNv-Wr-64c">
-                                                                                    <rect key="frame" x="57.333333333333314" y="21.666666666666671" width="6.3333333333333357" height="21"/>
+                                                                                    <rect key="frame" x="57.666666666666686" y="21.666666666666671" width="5.6666666666666643" height="21"/>
                                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="21" id="xiE-0Z-7OR"/>
@@ -5157,7 +5157,7 @@
                                                                                     </userDefinedRuntimeAttributes>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxs-2Y-Tz1">
-                                                                                    <rect key="frame" x="57.333333333333314" y="52.666666666666671" width="6.6666666666666643" height="21"/>
+                                                                                    <rect key="frame" x="57.666666666666686" y="52.666666666666671" width="6" height="21"/>
                                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="21" id="ceE-VW-Bnc"/>
@@ -5408,7 +5408,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Match Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEG-JM-KlM">
-                                        <rect key="frame" x="59.999999999999993" y="61.666666666666657" width="112.33333333333331" height="25"/>
+                                        <rect key="frame" x="60.000000000000007" y="63.666666666666657" width="101.66666666666669" height="21"/>
                                         <fontDescription key="fontDescription" name="Manrope-Semibold" family="Manrope" pointSize="18"/>
                                         <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -5462,9 +5462,18 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="FIT-3t-Hb6">
+            <size key="intrinsicContentSize" width="-1" height="30"/>
+        </designable>
+        <designable name="IAZ-Fa-ceH">
+            <size key="intrinsicContentSize" width="-1" height="30"/>
+        </designable>
         <designable name="Opy-T0-GkL"/>
         <designable name="nXV-HA-h1Y">
-            <size key="intrinsicContentSize" width="5" height="20.333333333333332"/>
+            <size key="intrinsicContentSize" width="4" height="23.666666666666668"/>
+        </designable>
+        <designable name="qTk-R5-2Ij">
+            <size key="intrinsicContentSize" width="-1" height="30"/>
         </designable>
         <designable name="y8j-XQ-Tqr"/>
         <designable name="yLx-8y-UGo"/>
